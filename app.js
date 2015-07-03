@@ -5,7 +5,7 @@
 		this.products = gems;
 	});
 
-	
+
 
 	var gems =[ 
 		{
