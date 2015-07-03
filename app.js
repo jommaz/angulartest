@@ -16,6 +16,15 @@
 		};
 	});
 
+	app.controller('ReviewController', function(){
+		this.review = {};
+		this.addReview = function(product){
+			product.reviews.push(this.review);
+			this.review={};
+		}
+	})
+
+
 	var gems =[ 
 		{
 			name: 'Dodecahedron',
@@ -45,8 +54,9 @@
 			{
 				full: "gem2.jpg",
 				thumb:"gem2.jpg"
-			},
-			]
+			}
+			],
+			
 		},
 		{
 			name:'Special Shiny Gem',
